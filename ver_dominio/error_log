@@ -1,0 +1,5 @@
+[14-Feb-2012 09:41:58] PHP Warning:  fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to whois.nic.tv:43 (Connection timed out) in /home/jquerydw/public_html/demos/ver_dominio/process.php on line 32
+[14-Feb-2012 09:42:57] PHP Warning:  fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to whois.nic.tv:43 (Connection timed out) in /home/jquerydw/public_html/demos/ver_dominio/process.php on line 32
+[14-Feb-2012 09:43:24] PHP Warning:  fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to whois.nic.tv:43 (Connection timed out) in /home/jquerydw/public_html/demos/ver_dominio/process.php on line 32
+[14-Feb-2012 09:43:56] PHP Warning:  fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to whois.nic.tv:43 (Connection timed out) in /home/jquerydw/public_html/demos/ver_dominio/process.php on line 32
+[16-Mar-2012 00:41:10] PHP Warning:  fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to whois.nic.tv:43 (Connection refused) in /home/jquerydw/public_html/demos/ver_dominio/process.php on line 32

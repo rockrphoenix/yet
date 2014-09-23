@@ -1,0 +1,81 @@
+#casa{
+    display: none;
+}
+
+#departamento{
+    display: none;
+}
+#edificio{
+    display: none;
+}
+#local{
+    display: none;
+}
+#oficina{
+    display: none;
+}
+#terreno{
+    display: none;
+}
+#bodegas{
+    display: none;
+}
+#ranchos{
+    display: none;
+}
+
+#fotos{
+    display: none;
+}
+
+.hipotecario{
+    display: none;
+}
+
+.errores{
+    display: none;
+    color: #f25824;
+    height: 20px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.herencia{
+    display: none;
+}
+
+.venta{
+    display: none;
+}
+
+.renta{
+    display: none;
+}
+
+#cargando{
+    width: 32px;
+    height: 32px;
+}
+#fotovideo{
+    display: none;
+}
+
+#propietariodatos{
+    display: none;
+}
+
+#files{
+    border: 1px solid;
+}
+
+#files tr td{
+    border: 1px solid;
+}
+
+#fin{
+    display: none;
+}
+.ui-corner-all{
+    background-color: #fff;
+    cursor: pointer;
+}

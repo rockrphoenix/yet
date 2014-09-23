@@ -1,0 +1,12 @@
+.ui-icon-circle-triangle-e{
+	float: right;
+}
+.ui-icon{
+	cursor: pointer;
+}
+#ui-datepicker-div{
+	background-color: #ffffff;
+	padding: 20px;
+	border-color: #000;
+	border:1px solid #000;
+}
