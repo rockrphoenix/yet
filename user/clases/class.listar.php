@@ -49,7 +49,15 @@
 
 		function Propiedades(){
 			//$prop=$this->conexion->query("SELECT prop.idCaracteristicas as idCaracteristicas, LigaYouTube, Descripcion, Fecha, FechaMod, PrecioVenta, PrecioRenta, ComisionVenta,ComisionREnta, Comentarios, EstatusVenta, M2terreno, M2Construccion, M2Jardin, Mfondo, Mfrente, NumeroCuartos, NumeroBanios, NumeroMediosBanios, NumeroCocheras, NumeroCocherasDescubiertas, NumeroCocherasVisitas, NumeroLineasTelefonicas, EdadInmueble, EstadoConservacion, CuartoServicio, NivelesConstruidos, NivelUbicacion, TipoDpto, ubicacioncuartoServicio, NumeroPrivados, idClasificacionEdificio, nunidades, nnounidades, idTipoObra, idTipoTerreno, NumeroFrentes, FormaTerreno, UsoSuelo, ConcentracionIndustrial, Ferrocarril, TransporteMultimodal, M2Oficina, m2bodega, AreaManiobras, TipoTecho, ViasComunicacionAutopista, Puerto, Andenes, CargaPisoToneladas, Hectareas, SistemaRiego, AbiertoVisitantes, RioCercano, SuperficiePastizal, OrigenAgua, TipoCultivos, TipoGanado, TipoRancho, VistaPanoramica, LagunaCercana, Establo, SuperficieAgricola, SuperficieHabitable, NumeroPozos, NumeroArbolesFrutales, NumeroCasas,bdescripcion,descripcionr FROM tblpropiedad as prop INNER JOIN tblcaracteristicas as caract on prop.idCaracteristicas=caract.idCaracteristicas AND idcliente='$this->idcliente'")or die("no se obtuveiron datos");
+<<<<<<< HEAD
 			$prop=$this->conexion->query("SELECT prop.LigaYouTube, prop.idTipo, prop.idPropiedad,prop.titulo,ub.estado,ub.municipio,ub.colonia,prop.PrecioVenta,prop.PrecioRenta,prop.idPersonalizado,prop.publicacion FROM tblpropiedad as prop inner join tblubicacion as ub on ub.IdUbicacion=prop.idUbicacion AND idcliente=$_SESSION[id] AND Estatus='1'");
+=======
+			$prop=$this->conexion->query("SELECT prop.idTipo, prop.idPropiedad,prop.titulo,ub.estado,ub.municipio,ub.colonia,prop.PrecioVenta,prop.idPersonalizado 
+                                            FROM tblpropiedad as prop 
+                                            inner join tblubicacion as ub on ub.IdUbicacion=prop.idUbicacion
+                                            AND idcliente=$_SESSION[id] AND Estatus='1'");
+			
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 			return $prop;
 			$this->conexion->close();
 			$prop->free();

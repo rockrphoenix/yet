@@ -12,8 +12,11 @@ require_once('../../clases/class.phpmailer.php');
 require_once('../../clases/class.smtp.php');
 require_once("../clases/class.insertaPropiedad.php");
 require_once("../clases/clase.editaImagenes.php");
+<<<<<<< HEAD
 require_once("../clases/class.asociaciones.php");
 require_once("../clases/class.testimoniales.php");
+=======
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 session_start();
 	$action = $_POST['action'];
 	switch($action){
@@ -82,7 +85,11 @@ session_start();
 		case 'redSoc':
 			$insertRedes= new insertaRedes($_POST);
 			$actual=$insertRedes->insertarRedes();
+<<<<<<< HEAD
 			echo($actual != 0) ? 1:0;
+=======
+			echo($actual != FALSE) ? 1:0;
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 				break;
 		case 'logotipo':
 			$handle = new Upload($_FILES['logotipo']);
@@ -144,6 +151,7 @@ session_start();
 		case 'imgPropiedad':
 		$strSuccess == 0;
 		$strError == 0;
+<<<<<<< HEAD
 		foreach ($_FILES as $valor) {
 			$handle = new Upload($valor);
 			$dir_dest = '../../../imagenes_cy/'.$_POST['usuario'].'/'.$_POST['propiedad'];
@@ -180,6 +188,64 @@ session_start();
 				echo 'error : ' . $handle->error;
 			}
 		}	
+=======
+		$_SESSION['idpropiedad'] = $_POST['idpropiedad'];
+			foreach ($_FILES as $valor) {
+				$handle = new Upload($valor);
+				$dir_dest = '../../../imagenes_cy/'.$_POST['id'].'/'.$_POST['idpropiedad'];
+				$dir_pics = '../../../imagenes_cy/'.$_POST['id'].'/'.$_POST['idpropiedad']; 
+				if ($handle->uploaded) {
+
+			        // yes, the file is on the server
+			        // below are some example settings which can be used if the uploaded file is an image.
+			        $handle->auto_create_dir 		 = true;
+			        $handle->file_max_size 			 = '2000000'; // 2mb
+			        $handle->file_new_name_body   	 = $_POST['id'].'_'.$_POST['idpropiedad'].'_'.uniqid();
+			        $handle->image_resize            = true;
+			        $handle->image_ratio_y           = false;
+			        $handle->image_x                 = 743;
+			        $handle->image_y                 = 449;
+			        $handle->image_convert 			 = 'jpg';
+
+			        // now, we start the upload 'process'. That is, to copy the uploaded file
+			        // from its temporary location to the wanted location
+			        // It could be something like $handle->Process('/home/www/my_uploads/');
+			        $handle->Process($dir_dest);
+
+			        // we check if everything went OK
+			        if ($handle->processed) {
+			            // everything was fine !
+			            $strSuccess++;
+			        } else {
+			            // one error occured
+			           $strError++;
+			        }
+
+			        // we delete the temporary files
+			        $handle-> Clean();
+
+			    } else {
+			        // if we're here, the upload file failed for some reasons
+			        // i.e. the server didn't receive the file
+			        //header("Location: ../sube.php?msj=3");//No se procesó la imagen
+			        echo 'error : ' . $handle->error;
+			    }
+			}
+
+			echo "
+			<script type=\"text/javascript\">
+						function redireccionar(){
+						  window.location=\"../imagenes.php?idpropiedad=$_POST[idpropiedad]&action=pred\";
+						} 
+						setTimeout (\"redireccionar()\", 2000); //tiempo expresado en milisegundos
+					</script>
+			Fue(ron) procesada(s) $strSuccess imagen(es)<br>
+			Y hubo $strError error(es)<br>
+			Por favor espere...";
+			
+			
+			
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 		break;
 
 		case 'modPass':
@@ -370,6 +436,7 @@ session_start();
 				$borrado=$borra->ocultaProp();
 				echo($borrado == 1) ? 1:0;
 				break;
+<<<<<<< HEAD
 			case 'asociaciones1':
 				$insertasoc= new Asociaciones($_POST);
 				$insert=$insertasoc->InsertaAsoc1();	
@@ -406,5 +473,8 @@ session_start();
 				echo($ocult == 1) ? 1:0;
 				break;				
 		default: echo "estoy aqui";
+=======
+		default: echo 0;
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 		break;
 	}

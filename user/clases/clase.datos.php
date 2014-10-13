@@ -18,9 +18,16 @@
 			return $aDatos;			
 		}
 		function datosAsesor(){
+<<<<<<< HEAD
 			$datos = $this->conexion->query("SELECT nombres, paterno, materno, tel, cel, email FROM tblasesores WHERE idasesor='$_SESSION[idasesor]'")or die("No encuentro el asesor");
 			$aDatos = $datos->fetch_array(MYSQL_ASSOC);
 			return $aDatos;
+=======
+			$datos = $this->conexion->query("SELECT nombres, paterno, materno, tel, cel, email FROM tblasesores WHERE idcliente='$_SESSION[id]'")or die("No encuentro el asesor");
+			$aDatos = $datos->fetch_array(MYSQL_ASSOC);
+			$retVal = (count($aDatos)==0) ? 1 : $aDatos;
+			return $retVal;
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 		}
 		function datosSecciones(){
 			$sec = $this->conexion->query("SELECT idseccion, titulo FROM tblsecciones WHERE idcliente = '$_SESSION[id]'")or die("No busqué las secciones");
@@ -86,6 +93,13 @@
 				return true;
 			}
 		}
+<<<<<<< HEAD
+=======
+		function muestraFacturacion(){
+
+		}
+
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 		function datosUbicacion(){
 			$datos = $this->conexion->query("SELECT ubi.idubicacion as idubicacion FROM tblubicacion as ubi INNER JOIN tbldatosfact as datosf on datosf.idubicacion=ubi.idubicacion AND idcliente='$_SESSION[id]'")or die("No encuentro la ubicación");
 			$aDatos = $datos->fetch_array(MYSQL_ASSOC);
@@ -125,12 +139,20 @@
 				return $dseccion;
 		}
 		function listaAsesores(){
+<<<<<<< HEAD
 			$asesores = $this->conexion->query("SELECT idasesor, nombres, email FROM tblasesores WHERE idcliente = '$_SESSION[id]' and estatus = '2'")or die("No puedo listar asesores");
+=======
+			$asesores = $this->conexion->query("SELECT idasesor, nombres, email FROM tblasesores WHERE idcliente = '$_SESSION[id]' and estatus = '1' || estatus = '2'")or die("No puedo listar asesores");
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 			if ($asesores->num_rows == 0) {
 				$str = '
 					<tr>
 						<td colspan="4">
+<<<<<<< HEAD
 							No se han capturado asesores hasta el momento<br><a href="asesores.php">Capturar Nuevo Asesor</a>
+=======
+							No se han capturado asesores ahsta el momento<br><a href="asesores.php">Capturar Nuevo Asesor</a>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 						</td>
 					</tr>
 				';
@@ -161,6 +183,7 @@
         } 
 
         function propiedadPOc(){
+<<<<<<< HEAD
 			$prop = $this->conexion->query("SELECT idpropiedad, titulo, Descripcion FROM tblpropiedad WHERE idpropiedad='$_GET[idpropiedad]'")or die("no busqué en propiedades");
 			return $prop;
 		}
@@ -203,5 +226,12 @@
 					return false;
 				}
 		}
+=======
+		$prop = $this->conexion->query("SELECT idpropiedad, titulo, Descripcion FROM tblpropiedad WHERE idcliente='$_SESSION[id]'")or die("no busqué en propiedades");
+		return $prop;
+		}
+		
+
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 	}
 ?>

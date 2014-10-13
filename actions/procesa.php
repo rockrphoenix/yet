@@ -3,7 +3,10 @@ require_once('../clases/class.logueo.php');
 require_once('../clases/class.alta.php');
 require_once('../clases/class.changepass.php');
 require_once("../clases/class.Restablece.php");
+<<<<<<< HEAD
 require_once('../clases/class.restablecePass.php');
+=======
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 require_once('../clases/class.phpmailer.php');
 require_once('../clases/class.smtp.php');
 	$action = $_POST['action'];

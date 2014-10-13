@@ -78,7 +78,11 @@ if ($arrayDatos == false) {
             <form class="content-form" <?php echo "id='$accion'"; ?> <?php echo "name='$accion'"; ?> method="post" action="procesa/formularios.php">
             <div class="one-half">
             <?php echo "<h2>".$asesor."</h2>"; ?>
+<<<<<<< HEAD
              <p>Los campos marcados con <span class="note">*</span> son obligatorios</p>
+=======
+             <p>Los campos marcados con <span class="note">*</span> són obligatorios</p>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
             <p>
                 <label for="nombreRs">Nombre o razón social:<span class="note">*</span></label>
                 <input id="nombreRs" type="text" name="nombreRs" <?php echo "value='$arrayDatos[nombrers]'"?>>

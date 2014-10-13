@@ -3,7 +3,10 @@
  * @author grupo syse
  * @copyright 2014
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 require_once('../clases/class.logueo.php');
 $valida= new Logueo();
 $valida->validaSesion();

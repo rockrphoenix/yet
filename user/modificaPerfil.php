@@ -85,7 +85,11 @@ $estatus = $valida->validaSesion();
             <!--<form class="content-form" id="mod_perf" name="mod_perf" method="post" action="procesa/formularios.php">-->
                 
             <div class="one-half">
+<<<<<<< HEAD
             <h2>Cambiar información de perfil</h2>
+=======
+            <h2>Formulario de Datos</h2>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
             <p><input type="email" name="mail" disabled <?php echo 'value="'.$aDatos[email].'"'; ?>></p>
             <form class="content-form" id="mod_perf" name="mod_perf" method="post" action="procesa/formularios.php">
             <p><label for="nombre">Nombre: <span class="note">*</span></label><input type="text" name="nombre" <?php echo 'value="'.$aDatos[nombres].'"'; ?>></p>

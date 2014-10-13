@@ -1069,12 +1069,21 @@ var tipoOpe=$("#tipoOperacion").val();
                 minlength: "Deben ser 5 caracteres"
             },
             calle: "ingrese la calle",
+<<<<<<< HEAD
             numero: "ingrese número",
             tanuncio: "Ingrese el t&iacute;tulo del anuncio",
             estatusPropiedad: "Seleccione un estatus",
             descripcion: "ingrese la descripci&oacute;n",            
             m2t: "ingrese los metros cuadrados del terreno",
             m2c: "ingrese metros cuadrados de construcción",
+=======
+            numero: "ingrese nuemero",
+            tanuncio: "Ingrese el t&iacute;tulo del anuncio",
+            estatusPropiedad: "Seleccione unEstatus",
+            descripcion: "ingrese la descripci&oacute;n",            
+            m2t: "ingrese los metros cuadrados del terreno",
+            m2c: "ingrese metros cuadrados de construcci&acute;n",
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
             tipoOperacion: "Seleeccione una opci&oacute;n",
             pventa: {
                 required: "Ingrese precio de venta"

@@ -72,7 +72,12 @@ require_once("clases/class.muestraOficina.php");
                         <tr>
                             <th>No. de oficina</th>
                             <th>Nombre</th>
+<<<<<<< HEAD
                             <th>Descripción</th>
+=======
+                            <th>Calle</th>
+                            <th>Numero</th>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
                             <th>Opciones</th>
                         </tr>
                     </thead>
@@ -89,9 +94,16 @@ require_once("clases/class.muestraOficina.php");
                  $oficina .="<tr>
                             <td>".$oficinas['idoficina']."</td>
                             <td>".$oficinas['nombre']."</td>
+<<<<<<< HEAD
                             <td>".$oficinas['descripcion']."</td>
                             <td><div>
                                     <div style='width:50%; display:inline-block'><a href='oficinas.php?id=".$oficinas['idoficina']."'>Editar</a></div><div style='width:50%; display:inline-block'><a href='ocultaOficina.php?id=".$oficinas['idoficina']."'>Borrar</a></div>
+=======
+                            <td>".$oficinas['calle']."</td>
+                            <td>".$oficinas['numero']."</td>
+                            <td><div>
+                                    <div style='width:33%; display:inline-block'><a href='#''>Ver</a></div><div style='width:33%; display:inline-block'><a href='oficinas.php?id=".$oficinas['idoficina']."'>Editar</a></div><div style='width:33%; display:inline-block'><a href='ocultaOficina.php?id=".$oficinas['idoficina']."'>Borrar</a></div>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
                             </div></td>
                         </tr>";
                  }

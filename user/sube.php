@@ -34,8 +34,11 @@ if (isset($_GET['idProp'])) {
     </script><!-- drop-down menu -->
     <script src="../js/jquery.ui.totop.min.js" type="text/javascript"></script> <!-- scroll to top -->
     <script src="../js/custom.js" type="text/javascript"></script> <!-- jQuery initialization -->
+<<<<<<< HEAD
 
     <script type="text/javascript" src="../js/plupload.full.min.js"></script><!--subida de archivos multiple-->
+=======
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
     
     <!-- end JS -->
 	<title>Zona Clientes</title>
@@ -61,6 +64,7 @@ if (isset($_GET['idProp'])) {
         <section id="content" class="container clearfix">
         	<!-- begin page header -->
             <header id="page-header">
+<<<<<<< HEAD
                 <h1 id="page-title">Subir imágenes</h1>
             </header>
                 <div id="filelist">Puede que tu navegador no sea compatible con nuestro sistema de subida de archivos, por favor intenta con otro</div>
@@ -129,6 +133,24 @@ uploader.init();
 
 </script>
 
+=======
+                <h1 id="page-title">Subir archivos</h1>
+            </header>
+                <h2>Propiedad</h2>
+                <form method="post" enctype="multipart/form-data" action="procesa/formularios.php">
+                	<input type="hidden" name="MAX_FILE_SIZE" VALUE="2000000">
+                	<input type="hidden" name="action" value="imgPropiedad">
+                	<input type="hidden" name="id" <?php echo 'value="'.$_SESSION['id'].'"'; ?> >
+                	<input type="hidden" name="idpropiedad" <?php echo 'value="'.$idpropiedad.'"'; ?> >
+		            <input type="file" name="img_1"><br>
+		            <input type="file" name="img_2"><br>
+		            <input type="file" name="img_3"><br>
+		            <input type="file" name="img_4"><br>
+		            <input type="file" name="img_5"><br><br>
+		            <input type="submit" value="Enviar" class="button">
+		        </form>
+        </section>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
         <!-- end content -->             
 	<!-- begin footer -->
 	<?php include '../includes/footerClientes.php' ?>

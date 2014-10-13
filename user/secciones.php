@@ -80,7 +80,11 @@ if (isset($datos)) {
             <form class="content-form" id="secciones" name="secciones" method="post" action="procesa/formularios.php">
                     <div class="one-half">
 
+<<<<<<< HEAD
                     <h2>Crear nueva sección</h2>
+=======
+                    <h2>Formulario de Datos</h2>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
                      <p>Los campos marcados con <span class="note">*</span> són obligatorios</p>
                     
                     <p><label for="titulo">Título: <span class="note">*</span></label><input type="text" id="titulo" name="titulo" <?php echo "value='".$datos['titulo']."'"?>></p>

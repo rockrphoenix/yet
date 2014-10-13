@@ -3,7 +3,29 @@ $(document).ready(function(){
 //validacion del formulario redes sociales
 	$("#redSoc").validate({
 		rules:{
+<<<<<<< HEAD
 			
+=======
+			face:{
+				required:true,
+				url:true
+			},
+			twitter:{
+				required:true,
+				url:true
+			}
+			
+		},
+		messages:{
+			face:{
+				required:"Campo obligatorio",
+				url:"Debe ingresar una direccion URL válida"
+			},
+			twitter:{
+				required:"Campo obligatorio",
+				url:"Debe ingresar una direccion URL válida"
+			}
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 			
 		},
 		submitHandler: function(form){

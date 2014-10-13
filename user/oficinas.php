@@ -74,22 +74,35 @@ if (isset($_GET['id'])) {
             </header>
             <form class="content-form" id="oficina" name="oficina" method="post" action="procesa/formularios.php">
             <div class="one-half">
+<<<<<<< HEAD
             <?php echo ($asesor!="") ? "<h2>".$asesor."</h2>": '<h2>Datos de la oficina</h2>'; ?>
+=======
+            <?php echo "<h2>".$asesor."</h2>"; ?>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
             
             <p>
                 <label for="nombre">Nombre de la oficina:</label>
                 <input id="nombre" type="text" name="nombre" value='<?php echo $oficinas['nombre']?>'>
             </p>
+<<<<<<< HEAD
             <p><label for="descripcion">Descripción de la Oficina</label></p>
             <p><textarea name="descripcion"><?php echo $oficinas['descripcion'] ?></textarea></p>
             <!-- <p><label for="calle">Calle: <span class="note">*</span></label><input type="text" name="calle" value='<?php echo $oficinas['calle']?>'></p>
+=======
+            <p><label>Dirección: </label></p>
+            <p><label for="calle">Calle: <span class="note">*</span></label><input type="text" name="calle" value='<?php echo $oficinas['calle']?>'></p>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
             <p><label for="numero">Número: <span class="note">*</span></label><input type="text" name="numero" value='<?php echo $oficinas['numero']?>'></p>
             <p><label for="no_interior">Número interior: </label><input type="text" name="no_interior" value='<?php echo $oficinas['no_int']?>'></p>  
             <p><label for="colonia">Colonia: <span class="note">*</span></label><input type="text" name="colonia" value='<?php echo $oficinas['colonia']?>'></p>
             <p><label for="delegación">Delegación/municpio: <span class="note">*</span></label><input type="text" name="delegacion" value='<?php echo $oficinas['delegacion']?>'></p>
             <p><label for="estado">Estado: <span class="note">*</span></label><input type="text" name="estado" value='<?php echo $oficinas['estado']?>'></p>
             <p><label for="ciudad">Ciudad: <span class="note">*</span></label><input type="text" name="ciudad" value='<?php echo $oficinas['ciudad']?>'></p>
+<<<<<<< HEAD
             <p><label for="telefono">Teléfono: <span class="note">*</span></label><input type="text" name="telefono" value='<?php echo $oficinas['telefono']?>'></p> -->
+=======
+            <p><label for="telefono">Teléfono: <span class="note">*</span></label><input type="text" name="telefono" value='<?php echo $oficinas['telefono']?>'></p>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
             <input type="hidden" name="id_mod" <?php echo 'value="'.$_GET['id'].'"' ?>>
             <input type="hidden" name="id" <?php echo 'value="'.$_SESSION['id'].'"' ?>>
             <br><input type="hidden" name="action" <?php echo "value='$accion'" ?>>
@@ -110,7 +123,11 @@ if (isset($_GET['id'])) {
                 <h2>¿Para qué registrar una oficina?</h2>
                 <p>Esto facilita el contacto con tus clientes de las diferentes localidades. Si a un cliente le interesa alguna de tus propiedades, al tener más oficinas registradas, le permitirá saber qué oficina es la más cercana o  podrá elegir a cual contactar</p>
                 <h2>¿Cómo registro una oficina?</h2>
+<<<<<<< HEAD
                 <p>Para hacer el registro de una oficina, sólo realice los siguientes pasos:</p>
+=======
+                <p>Para hacer el registro de una oficina, sólo realicé los siguientes pasos:</p>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
                 <p>1.- Capture los datos solicitados de la oficina.</p>
                 <p>2.- Una vez que se capturen los datos, dar clic en el botón Guardar.</p>
                 <p>3.-  ¡Listo! La información de sus oficinas se reflejará en su página y podrá editarla desde el submenú Lista de oficinas.</p>

@@ -79,7 +79,11 @@
             }     
         }
         public function obtenEstatus(){
+<<<<<<< HEAD
             if (isset($_SESSION['idasesor'])) {
+=======
+            if (isset($_SESSION[idasesor])) {
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
                 $est = $this->conexion->query("SELECT estatus FROM tblasesores WHERE idasesor = '$_SESSION[idasesor]'")or die("no busque estatus de asesor");
                 $aEstatus = $est->fetch_array(MYSQL_ASSOC);
                 $retVal = ($aEstatus['estatus'] == 1) ? 3 : 4 ;

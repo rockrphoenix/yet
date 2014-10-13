@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿
 <!DOCTYPE HTML>
+=======
+﻿<!DOCTYPE HTML>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 <!--[if IE 8]> <html class="ie8 no-js"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
 <head>

@@ -1,6 +1,10 @@
 <?php//@skip-indexing?>
+<<<<<<< HEAD
 <?php include('menu.php'); 
 ?>
+=======
+<?php include('menu.php'); ?>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 <!-- begin header -->
 <header id="header" class="container">
     <!-- begin header top -->
@@ -44,11 +48,19 @@
                         </ul>
                     </li>
                     <li <?php echo ($seccion == "soporte") ? "class='current'" : "class=''" ; ?>><a href="contactUser.php" rel="submenu5">Soporte</a>
+<<<<<<< HEAD
                         <!--<ul id="submenu5" class="ddsubmenustyle">
                             <li><a href="reportes.php">Levantar un Ticket</a></li>
                             <li><a href="blog-post.html">Tickets Levantados</a></li>
                             <li><a href="blog-post.html">FAQ</a></li>
                         </ul>-->
+=======
+                        <ul id="submenu5" class="ddsubmenustyle">
+                            <!--<li><a href="reportes.php">Levantar un Ticket</a></li>
+                            <li><a href="blog-post.html">Tickets Levantados</a></li>
+                            <li><a href="blog-post.html">FAQ</a></li>-->
+                        </ul>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
                     </li>
                 </ul>
         </nav>

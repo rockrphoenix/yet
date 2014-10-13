@@ -62,12 +62,17 @@ $valida->validaSesion();
         <section id="content" class="container clearfix">
             <!-- begin page header -->
              <header id="page-header">
+<<<<<<< HEAD
                 <h1 id="page-title">Contacto y Redes sociales</h1>
+=======
+                <h1 id="page-title">Redes sociales</h1>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
             </header>
             <!--<form class="content-form" id="red_soc" name="red_soc" method="post" action="procesa/formularios.php">-->
             <form class="content-form" id="redSoc" name="redSoc" method="post" action="procesa/formularios.php">
                     <div class="one-half">
 
+<<<<<<< HEAD
                     <h2>Información de contacto</h2>
                      <!--<p>Los campos marcados con <span class="note">*</span> son obligatorios</p>-->
 
@@ -79,6 +84,13 @@ $valida->validaSesion();
                     <p><label for="tel">Teléfono 1: </label><input type="text" id="tel" name="tel"  <?php echo "value='$arrayRedes[telprinc]'" ?>></p>
                     <p><label for="tel2">Teléfono 2: </label><input type="text" id="tel2" name="tel2"  <?php echo "value='$arrayRedes[telsec]'" ?>></p>
                     
+=======
+                    <h2>Formulario de datos</h2>
+                     <p>Los campos marcados con <span class="note">*</span> són obligatorios</p>
+                    
+                    <p><label for="face">Facebook: </label><input type="url" id="face" name="face" <?php echo "value='$arrayRedes[facebook]'" ?>></p>
+                    <p><label for="twitter">Twitter: </label><input type="url" id="twitter" name="twitter"  <?php echo "value='$arrayRedes[twitter]'" ?>></p>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 
                     <input type="hidden" name="id" <?php echo 'value="'.$_SESSION[inmobiliaria].'"'; ?>>
                     <br><input type="hidden" name="action" value="redSoc">
@@ -96,6 +108,7 @@ $valida->validaSesion();
                     </div>
 
                     <div class="one-half column-last">
+<<<<<<< HEAD
                         <h2>¿En dónde se verá reflejada mi información de contacto?</h2>
                         <p>Tu información de contacto se verá reflejada en la parte superior izquierda de tu página.</p>
                         <img src="images/colores/redes_contacto1.png" style="width:100%;margin-bottom:10px;">
@@ -107,6 +120,11 @@ $valida->validaSesion();
                         <p>Esto se verá reflejado en los iconos de redes sociales  que se encuentran en la parte superior e inferior derecha de  tu página.</p>
                         <img src="images/colores/redes2.jpg" style="width:30%;margin-bottom:10px;">
                         <p>Cuando tus clientes den clic en los iconos, los llevará a tus redes sociales.</p>
+=======
+                        <h2>¿Cómo configuro las redes sociales en mi página?</h2>
+                        <p>Sólo necesita copiar el link desde su navegador y pegarlo en el campo de Facebook o Twitter. Por último, dar clic en Guardar.</p>
+                        <p>Esto se verá reflejado en su página en los iconos de Facebook y Twitter respectivamente, cuando sus clientes den clic en los iconos, los llevará a sus redes sociales.</p>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
                     </div>
             </form>
             

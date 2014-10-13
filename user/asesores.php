@@ -122,7 +122,11 @@ $valida->validaSesion();
                 <h2>¿Para que registrar un asesor inmobiliario?</h2>
                 <p>Dentro del sistema un asesor inmobiliario puede ayudar a subir y administrar propiedades así como también prospectar compradores.</p>
                 <h2>¿Como registro un asesor inmobiliario?</h2>
+<<<<<<< HEAD
                 <p>Para hacer el registro de un nuevo asesor, sólo realice los siguientes pasos:</p>
+=======
+                <p>Para hacer el registro de un nuevo asesor, sólo realicé los siguientes pasos:</p>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
                 <p>1.- Capture los datos del asesor.</p>
                 <p>2.- Una vez que se guarden los datos, el sistema envía un email de confirmación a la cuenta de correo que fue registrada.</p>
                 <p>3.-  El asesor debe entrar a su cuenta de correo y dar clic en la liga para confirmar su registro.</p>

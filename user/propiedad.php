@@ -59,6 +59,10 @@ $estatus = $valida->validaSesion();
             include_once('../includes/headerAsesores.php');
         }
         $user = $_SESSION['usuario'];
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
     ?>
         
     <!-- begin content -->
@@ -415,7 +419,11 @@ $estatus = $valida->validaSesion();
                                 <table style="width: 100%;">
                                     <tr><td>
                                      <p>
+<<<<<<< HEAD
                                         <label for="nunidades">No. de unidades habitacionales.<span class="note">*</span></label>
+=======
+                                        <label for="nunidades">No. de unidades habitacionales:<span class="note">*</span></label>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
                                         <input type="text" name="nunidades" <?php echo ($datos['nunidades'] != '') ? 'value="'.$datos['nunidades'].'"' : "" ; ?>>
                                     </p>
                                     </td>

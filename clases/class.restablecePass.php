@@ -23,6 +23,10 @@
 			$actualiza=$this->conexion->query("UPDATE tbldatos SET resetPass=1 WHERE Email='$_POST[mail]'");
 			if ($actualiza) {
 				return true;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 			}else{
 				return false;
 			}

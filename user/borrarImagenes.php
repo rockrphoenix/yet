@@ -2,7 +2,11 @@
 require_once('../clases/class.logueo.php');
 require_once('clases/clase.imagenes.php');
 $valida= new Logueo();
+<<<<<<< HEAD
 $estatus = $valida->validaSesion();
+=======
+$valida->validaSesion();
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 ?>
 <!DOCTYPE HTML>
 <!--[if IE 8]> <html class="ie8 no-js"> <![endif]-->
@@ -52,6 +56,7 @@ $estatus = $valida->validaSesion();
 <!-- begin container -->
 <div id="wrap">
 	<?php
+<<<<<<< HEAD
         $seccion = "propiedad"; 
         if ($estatus == 2) {
             include_once('../includes/headerClientes.php');
@@ -60,6 +65,10 @@ $estatus = $valida->validaSesion();
         }else if($estatus == 3 || $estatus == 4){
             include_once('../includes/headerAsesores.php');
         }
+=======
+        $seccion = "pagina"; 
+        include_once('../includes/headerClientes.php');
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
         $imagenes = new Imagenes($_GET);
         $str = $imagenes->muestraImagenes();
     ?>

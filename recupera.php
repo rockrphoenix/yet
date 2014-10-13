@@ -37,7 +37,11 @@
     <script src="js/jquery.touchSwipe.min.js" type="text/javascript"></script> <!-- touchSwipe -->
     <script src="js/custom.js" type="text/javascript"></script> <!-- jQuery initialization -->
     <script src="js/jquery.validate.min.js" type="text/javascript"></script> <!-- form validation -->
+<<<<<<< HEAD
     <script src="js/valida_recuperacion.js" type="text/javascript"></script>--><!-- form recuperacion de contraseña-->
+=======
+    <!--<script src="js/valida_recuperacion.js" type="text/javascript"></script>--><!-- form recuperacion de contraseña-->
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
  <script type="text/javascript">
 
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=

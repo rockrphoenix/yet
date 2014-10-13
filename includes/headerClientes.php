@@ -42,6 +42,7 @@
                             <li><a href="logo.php">Logotipo</a></li>
                             <!--<li><a href="listDominios.php">Dominio(s)</a></li>-->
                             <li><a href="datosFact.php">Datos de facturación</a></li>
+<<<<<<< HEAD
                             <li><a href="redesSoc.php">Contacto y Redes sociales</a></li>
                             <li><a href="secciones.php">Nueva sección</a></li>
                             <li><a href="listSecc.php">Lista de secciones</a></li>
@@ -49,6 +50,11 @@
                             <li><a href="listasoc.php">Lista de asociaciones</a></li>
                             <li><a href="testimClientes.php">Nuevo testimonial</a></li>
                             <li><a href="listTestim.php">Lista de testimoniales</a></li>
+=======
+                            <li><a href="redesSoc.php">Redes sociales</a></li>
+                            <li><a href="secciones.php">Nueva sección</a></li>
+                            <li><a href="listSecc.php">Lista de secciones</a></li>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
                         </ul>
                     </li>
                     <li <?php echo ($seccion == "perfil") ? "class='current'" : "class=''" ; ?>><a href="#" rel="submenu4">Perfil</a>

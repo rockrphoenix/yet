@@ -1,6 +1,9 @@
 <?php
 require_once('../clases/class.logueo.php');
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 $valida= new Logueo();
 $estatus = $valida->validaSesion();
 ?>
@@ -197,6 +200,7 @@ $estatus = $valida->validaSesion();
                     </div>
 
                     <div class="one-half column-last">
+<<<<<<< HEAD
                         <h2>¿Cómo modifico mi contraseña?</h2>
                         <p>Por motivos de seguridad  te recomendamos que cambies regularmente tu contraseña.</p>
                         <p>Para modificarla, sólo ingresa tu contraseña actual, en el campo de abajo ingresa la nueva contraseña y escríbela de nuevo en el último campo. Ahora sólo da clic en el botón “Guardar” y ¡listo!</p>
@@ -212,6 +216,11 @@ $estatus = $valida->validaSesion();
                             <li>Está compuesta por caracteres de cada una de las siguientes cuatro categorías: letras mayúsculas, letras minúsculas, números, caracteres especiales ej.  ! @ # $ % ^ & *</li>
                             <li>Debe contener las características anteriores pero debe ser fácil de recordar para el usuario.</li>
                         </ul>
+=======
+                        <h2>¿Como configuro los colores de mi página?</h2>
+                        <p>Debes de elegir dos colores principales, estos colores aparecen en tu página de manera automática una vez que los guardas, el Color A es el color principal mientras que Color B aperece en menor medida.</p>
+                        <p>Puedes ingresar el color de manera hexadecimal o en RGB o simplemente elegir el que más te guste al dar click en alguno de los campos del formulario.</p>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
                     </div>
                 </form>
             

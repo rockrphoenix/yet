@@ -1,6 +1,10 @@
 <?php//@skip-indexing?>
+<<<<<<< HEAD
 <?php include('menu.php'); 
 ?>
+=======
+<?php include('menu.php'); ?>
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 <!-- begin header -->
 <header id="header" class="container">
     <!-- begin header top -->

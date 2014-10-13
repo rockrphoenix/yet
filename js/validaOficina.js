@@ -4,11 +4,41 @@ $(document).ready(function(){
 	$("#oficina").validate({
 		rules:{
 			nombre:"required",
+<<<<<<< HEAD
 			descripcion:"required"
 		},
 		messages:{
 			nombre:"La oficina debe llevar un título",
 			descripcion:"Ingrese una descripción"
+=======
+			calle:"required",
+			numero:"required",
+			//no_interior:"required",
+			colonia:"required",
+			delegacion:"required",
+			estado:"required",
+			ciudad:"required",
+			telefono:{
+				required:true,
+				minlength:8,
+				maxlength:13
+			}
+		},
+		messages:{
+			nombre:"Debe ingresar un Nombre",
+			calle:"Debe ingresar el nombre de la calle",
+			numero:"Debe ingresar el número de la propiedad",
+			//no_interior:"Debe ingresar el número interior de la propiedad",
+			colonia:"Debe ingresar una colonia",
+			delegacion:"Debe ingresar una delegación",
+			estado:"Debe ingresar un estado",
+			ciudad:"Debe ingresar una ciudad",
+			telefono:{
+				required:"Debe ingresar un número telefonico ",
+				minlength:"el número debe tener mas de 8 dígitos",
+				maxlength:"el número debe tener menos de 13 dígitos"
+			}
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 		},
 		submitHandler: function(form){
 			$.ajax({

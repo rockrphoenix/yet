@@ -10,6 +10,7 @@ class insertaRedes extends Conexion
 		$_POST;
 		$_SESSION;
 		parent::__construct();
+<<<<<<< HEAD
 		foreach ($_POST as $value) {
 			$value=$this->conexion->real_escape_string($value);
 		}
@@ -30,6 +31,26 @@ class insertaRedes extends Conexion
 	function __destruct(){
 		$this->conexion->close();
 	}
+=======
+	}
+	public function insertarRedes(){
+		$id=$this->conexion->real_escape_string($_POST['id']);
+		$face=$this->conexion->real_escape_string($_POST['face']);
+		$twit=$this->conexion->real_escape_string($_POST['twitter']);
+		
+		$buscar=$this->conexion->query("SELECT idInmobiliaria FROM tblconfiguracion WHERE idInmobiliaria='$id'")or die("no se encontraron datos");
+		$result=$buscar->fetch_array(MYSQL_ASSOC);
+		if (count($result)!= 0) {
+			$actualizar=$this->conexion->query("UPDATE tblconfiguracion SET facebook='$face', twitter='$twit' WHERE idInmobiliaria ='$id'")or die("no se pudo actualizar configuracion");
+			return $actualizar;
+		}else{
+			$insercion=$this->conexion->query("INSERT INTO tblconfiguracion (facebook,twitter,idInmobiliaria) VALUES ('$face','$twit',$id)")or die("no se pudo ingresar a configuracion");
+			return $insercion;
+		}	
+		$this->conexion->close();
+	}
+	
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 }
 
 ?>

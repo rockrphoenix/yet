@@ -8,7 +8,11 @@ class Asesores extends Conexion
 	}
 	public function verificar(){
 		if (count($_POST)!=0) {
+<<<<<<< HEAD
 			$verificar = $this->conexion->query("SELECT idasesor FROM tblasesores WHERE email = '$_POST[email]' and estatus = '1'")or die("Problemas al validar usuario");//selecciono de datos que sean igual al email que envio
+=======
+			$verificar = $this->conexion->query("SELECT idasesor FROM tblasesores WHERE email = '$_POST[email]'")or die("Problemas al validar usuario");//selecciono de datos que sean igual al email que envio
+>>>>>>> 1f22693d82efdd027128b4a534fecb9d8f3230a5
 			$resultado = $verificar->fetch_array(MYSQL_ASSOC);
 			if (count($resultado)!=0) {//si encuentro algun datos retorno falso
 				//echo "de verificar<br>";
