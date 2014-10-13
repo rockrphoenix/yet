@@ -1,0 +1,15 @@
+.encabezado{
+	font-size: 40px;
+	color: red;
+}
+#tabla_basico, #total_basico_tri, #total_basico_sem, #total_basico_anu{
+	display:none;
+}
+#total_basico_tri, #total_basico_sem, #total_basico_anu{
+	width: 200px;
+	margin: 0 auto;
+}
+#tri, #sem, #anu{
+	margin: 0;
+	width: 100px;
+}
